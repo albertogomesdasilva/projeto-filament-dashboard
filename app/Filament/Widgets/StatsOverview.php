@@ -15,7 +15,10 @@ class StatsOverview extends BaseWidget
     protected function getCards(): array
     {
         $tasks = Task::count();
-        $date = date('d/m/y H:i:s');
+        $h = date('H');
+        $h = $h - 23;
+        $hora = date($h. ':i:s');
+        $date = date('d/m/y')  .  $hora;
         return [
              
 
