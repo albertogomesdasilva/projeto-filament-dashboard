@@ -30,6 +30,6 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/painel', function () {
     return view('painel');
-})->name('painel');
+})->middleware('auth')->name('painel');
 
 require __DIR__.'/auth.php';
