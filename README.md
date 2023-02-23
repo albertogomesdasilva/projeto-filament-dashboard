@@ -159,3 +159,4 @@ class UserssChart extends BarChartWidget
         ];
     }
 }
+"# filament-dois-graficos" 
